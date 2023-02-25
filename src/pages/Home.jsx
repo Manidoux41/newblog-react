@@ -3,7 +3,7 @@ import Cards from '../components/Cards/Cards'
 
 function Home() {
   return (
-    <div className='flex flex-column sm:container sm:mx-auto'>
+    <div className='sm:mx-40'>
       <Cards />
     </div>
   )
