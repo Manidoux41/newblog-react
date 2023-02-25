@@ -1,8 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Card({ cover, title }) {
   return (
-    <div
+    <Link
       id="card"
       className="w-[340px] h-[340px] mx-auto justify-self-center self-center relative rounded-md overflow-hidden"
     >
@@ -10,7 +11,7 @@ function Card({ cover, title }) {
       <h3 className="text-white text-lg absolute left-2 bottom-2 z-10">
         {title}
       </h3>
-    </div>
+    </Link>
   );
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 
 function Logements() {
   return (
-    <div>Logements</div>
+    <div className='sm:mx-40'>Logements</div>
   )
 }
 
