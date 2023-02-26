@@ -1,10 +1,14 @@
-import React from 'react'
 import { useParams } from 'react-router-dom'
 
-function Logements() {
-  const { id } = useParams()
+function Logements({logements}) {
+  const  {logementId} = useParams()
+
+ 
+
   return (
-    <div className='sm:mx-44'>Logements {id}</div>
+    <div className='sm:mx-44'>
+      {logementId}     
+    </div>
   )
 }
 
