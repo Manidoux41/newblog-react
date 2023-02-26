@@ -17,7 +17,7 @@ function PublicRouter({logements}) {
         <Route path='/about' element={<About />} />
         <Route path='/logements/:logementId' element={<Logements apparts={logements}/>} />
 
-        <Route path='/*' element={<NotFound />} />
+        <Route path='*' element={<NotFound />} />
       </Route>
     </Routes>
   )
