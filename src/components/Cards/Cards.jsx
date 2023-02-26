@@ -13,7 +13,7 @@ function Cards() {
   return (
     <div className="bg-gray-100 rounded-2xl flex justify-between flex-wrap gap-[60px] p-10 sm:my-10">
       {logements.map((item) => (
-        <Card key={item.id} title={item.title} cover={item.cover} />
+        <Card key={item.id} id={item.id} title={item.title} cover={item.cover} />
       ))}
     </div>
   );

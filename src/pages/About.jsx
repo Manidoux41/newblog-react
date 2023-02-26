@@ -1,10 +1,10 @@
 import React from 'react'
 import Banner from '../components/Banner/Banner'
 
-function About() {
+function About({title}) {
   return (
     <div className='sm:mx-44'>
-      <Banner />
+      <Banner title=''/>
     </div>
   )
 }
