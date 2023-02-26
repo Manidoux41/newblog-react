@@ -1,17 +1,17 @@
 import { Link } from "react-router-dom";
 
-function Card({ id, cover, title }) {
-  const imageURL = cover;
-
+function Card({appart}) {
+  const imageURL = appart.cover;
+  
   return (
     <Link
-      id="card"
+      key={appart.id}
       className="w-[340px] h-[340px] mx-auto justify-self-center self-center relative rounded-md overflow-hidden bg-center bg-cover drop-shadow-sm hover:drop-shadow-2xl hover:brightness-75"
       style={{ backgroundImage: `url(${imageURL})` }}
-      to='/logements/:id'
+      to='/appart/:id'
     >
       <h3 className="text-white drop-shadow-2xl text-lg absolute left-2 bottom-2 z-10">
-        {title}
+        {appart.title}
       </h3>
     </Link>
   );
