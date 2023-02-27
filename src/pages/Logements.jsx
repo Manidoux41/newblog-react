@@ -19,12 +19,11 @@ function Logements({apparts}) {
  
   return oneLogement ? (
     <div className='sm:mx-44'>
-      <Carousel />
+      <Carousel picture={appart.pictures}/>
       <h1 key={appart.id}>{appart.title}</h1>
       <Infos />
       <Tags />
       <Rank />
-
     </div>
   ) : (
     <Navigate to="/error" replace={<NotFound />} />
